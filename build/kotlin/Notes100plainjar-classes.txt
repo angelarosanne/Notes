@@ -1,0 +1,1 @@
+/home/angelasantos/Downloads/Notes/build/classes/kotlin/main/com/example/Notes/Application.class:/home/angelasantos/Downloads/Notes/build/classes/kotlin/main/com/example/Notes/ApplicationKt.class:/home/angelasantos/Downloads/Notes/build/classes/kotlin/main/com/example/Notes/controller/ControllerNotes.class

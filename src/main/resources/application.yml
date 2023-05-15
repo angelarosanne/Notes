@@ -1,0 +1,35 @@
+
+server:
+  port: ${ENV_PORT:9081}
+  servlet:
+    contextPath: ${ENV_CTX_PATH:/Notes}
+
+spring:
+  boot:
+    admin:
+      client:
+        url: ${ENV_SBA_BASE_URL:http://localhost:9080/sba%7D
+        username: admin
+        password: admin
+        enabled: ${ENV_SBA_ACTIVE:false}
+        instance:
+          name: ${spring.application.name}
+          prefer-ip: true
+  application:
+    name: Notes
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+          - health
+          - loggers
+  endpoint:
+    health:
+      show-details: always
+
+http:
+  timeout: ${ENV_HTTP_TIMEOUT:10}
+  debug: ${ENV_HTTP_DEBUG:false}
+
